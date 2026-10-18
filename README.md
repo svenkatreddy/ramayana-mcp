@@ -62,11 +62,16 @@ Claude Desktop config (`claude_desktop_config.json`):
 The endpoint is stateless (one POST per JSON-RPC request, no sessions), which
 fits the Hobby plan's function limits. Point any MCP client at the URL above.
 
-## Publish on Smithery (optional, for discoverability)
+## Publish on Smithery (for discoverability)
 
-1. Push the repo to GitHub (public).
-2. Go to smithery.ai, sign in, and add the repo. `smithery.yaml` is included;
-   verify it against the current Smithery docs when publishing.
+1. Push the repo to GitHub (public) - done: `svenkatreddy/ramayana-mcp`.
+2. Go to [smithery.ai](https://smithery.ai), sign in with GitHub.
+3. Add / deploy the `ramayana-mcp` repo. `smithery.yaml` declares the
+   TypeScript runtime; Smithery installs, builds, and imports `createServer`
+   plus `configSchema` from `src/index.ts`. No API keys or config needed.
+
+Smithery hosts the server and gives it a registry page with one-click
+install for Claude Desktop, Cursor, and other clients.
 
 ## Data and attribution
 

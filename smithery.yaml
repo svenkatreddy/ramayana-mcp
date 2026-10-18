@@ -1,13 +1,5 @@
-# Smithery deployment config. Verify against current Smithery docs when publishing.
+# Smithery deployment config. Smithery's TypeScript runtime reads this file,
+# runs `npm install` + `npm run build`, and imports `createServer` and
+# `configSchema` from `src/index.ts`. Verify against the current Smithery
+# docs if a deploy ever fails on config parsing.
 runtime: "typescript"
-startCommand:
-  type: "stdio"
-  configSchema:
-    type: object
-    properties: {}
-  commandFunction: |-
-    (config) => ({
-      command: "node",
-      args: ["dist/src/stdio.js"],
-    })
-  exampleConfig: {}
