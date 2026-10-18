@@ -1,0 +1,13 @@
+# Smithery deployment config. Verify against current Smithery docs when publishing.
+runtime: "typescript"
+startCommand:
+  type: "stdio"
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: "node",
+      args: ["dist/src/stdio.js"],
+    })
+  exampleConfig: {}
