@@ -7,7 +7,8 @@ fetch Sanskrit plus English/Hindi/Telugu translations, and get a deterministic
 verse of the day. Same codebase serves three targets:
 
 - **stdio** (`src/stdio.ts`) — Claude Desktop, Cursor, and Smithery hosting
-- **Vercel serverless** (`api/mcp.ts`) — stateless Streamable HTTP at `/api/mcp`
+- **Vercel serverless** (`api/mcp.ts`) — stateless JSON-RPC over HTTP at `/api/mcp`
+  (dependency-free handler; the SDK's ESM transport crashes Vercel's runtime)
 
 ## Tools
 
