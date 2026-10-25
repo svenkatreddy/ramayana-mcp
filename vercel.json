@@ -1,1 +1,1 @@
-{"functions":{"api/mcp.ts":{"includeFiles":"data/**"}}}
+{"functions":{"api/mcp.ts":{"includeFiles":"data/**"}},"outputDirectory":"public"}

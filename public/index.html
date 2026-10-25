@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ramayana Book MCP Server</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 640px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+code { background: #f2f2f2; padding: 0.15em 0.4em; border-radius: 4px; }
+a { color: #1a56db; }
+</style>
+</head>
+<body>
+<h1>Ramayana Book MCP Server</h1>
+<p>An MCP server for the Valmiki Ramayana: verse lookup, full-text search, and a verse of the day, across Sanskrit, English, Hindi, and Telugu translations.</p>
+<p><strong>Endpoint:</strong> <code>https://ramayana-mcp.vercel.app/api/mcp</code></p>
+<h2>Tools</h2>
+<ul>
+<li><code>list_kandas</code> - the seven kandas with chapter counts</li>
+<li><code>get_verse</code> - one verse by kanda, chapter, and verse number</li>
+<li><code>get_sarga</code> - every verse of one chapter</li>
+<li><code>search_verses</code> - full-text search across all four languages</li>
+<li><code>verse_of_the_day</code> - a deterministic verse for a calendar date</li>
+</ul>
+<p>Health check: <a href="/api/hello"><code>/api/hello</code></a></p>
+<p>Source: <a href="https://github.com/svenkatreddy/ramayana-mcp">github.com/svenkatreddy/ramayana-mcp</a><br>
+Registry: <code>io.github.svenkatreddy/ramayana-mcp</code></p>
+</body>
+</html>
